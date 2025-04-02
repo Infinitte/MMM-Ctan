@@ -1,0 +1,17 @@
+.MMM-Ctan .module-header {
+    text-align: left;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.MMM-Ctan table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.MMM-Ctan th, .MMM-Ctan td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+}
+.MMM-Ctan .small {
+    font-size: 14px;
+}
