@@ -1,10 +1,11 @@
 # MMM-Ctan
-This [MagicMirror](https://github.com/MichMich/MagicMirror) module displays information about estimations for bus stops in Consorcio de Transportes de Andalucia. The service is provided by EMT Valencia. Supports Spanish (es).
+This [MagicMirror<sup>2</sup>] module displays information about estimations for bus stops in Consorcio de Transportes de Andalucia. The service is provided by EMT Valencia. Supports Spanish (es).
 
 ![Example of MMM-Ctan](./example_1.png)
 
 ## Dependencies
-- An installation of [MagicMirror<sup>2</sup>](https://github.com/MichMich/MagicMirror)
+- An installation of [MagicMirror<sup>2</sup>].
+- [API] of ctan.
 
 ## Installation
 
@@ -36,7 +37,10 @@ git pull
 
 ## Find your stop number
 
+Use CTAN [API] to locate your consortium and stop.
 
+- Consortium List: http://api.ctan.es/v1/Consorcios/7/consorcios
+- Stop list by Consortium: http://api.ctan.es/v1/Consorcios/7/paradas?lat=&long=
 
 ## Using the module
 
@@ -64,7 +68,8 @@ The following properties can be configured:
 | Option                       | Description
 | ---------------------------- | -----------
 | `parada  `                   | ID number of the bus stop.<br><br>**Required**<br>**Value type:** `Integer`<br>**Default value:** `1`
-| `consorcio`                  | Consorcio number.<br><br>**Required**<br>**Value type:** `Integer`<br>**Default value:** `7`
+| `consorcio`                  | Consortium number.<br><br>**Required**<br>**Value type:** `Integer`<br>**Default value:** `7`
 | `updateInterval`             | Time (in seconds) to wait before refreshing the data from the API.<br><br>**Required**<br>**Value type:** `Integer`<br>**Default value:** `300`
 
-[mm]: https://github.com/MagicMirrorOrg/MagicMirror
+[API]: http://api.ctan.es/doc/
+[MagicMirror<sup>2</sup>]: https://github.com/MagicMirrorOrg/MagicMirror
