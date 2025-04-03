@@ -1,17 +1,14 @@
-.MMM-Ctan .module-header {
-    text-align: left;
+.MMM-ctan .module-header {
     margin-bottom: 10px;
-    border-bottom: 1px solid white;
 }
-.MMM-Ctan table {
+.MMM-ctan table {
     width: 100%;
     border-collapse: collapse;
 }
-.MMM-Ctan th, .MMM-Ctan td {
-    border: 1px solid white;
-    padding: 8px;
+.MMM-ctan th, .MMM-Ctan td {
+    padding: 0 8px 0 0;
     text-align: center;
 }
-.MMM-Ctan .small {
-    font-size: 14px;
+.MMM-ctan table td:nth-child(1) {
+    width: 250px;
 }
